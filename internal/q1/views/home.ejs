@@ -1,0 +1,89 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+
+        <table border="1">
+            <tr>
+                <th>
+                    name
+                </th>
+                <th>
+                    email
+                </th>
+                <th>
+                    phno
+                </th>
+                <th>
+                    address
+                </th>
+                <th>
+                    city
+                </th>
+                <th>
+                    state
+                </th>
+                <th>
+                    qualification
+                </th>
+                <th>
+                    experience
+                </th>
+                <th>
+                    lastCompanyName
+                </th>
+                <th>
+                    expectedSalary
+                </th>
+                <th>
+                    applyFor
+                </th>
+                <th>
+                    img
+                </th>
+            </tr>
+            <% data.forEach((res)=>{ %>
+                <tr>
+                <td>
+                    <%= res.name %>
+                </td>
+                <td>
+                    <%= res.email%>
+                </td>
+                <td>
+                    <%= res.phno%>
+                </td>
+                <td>
+                    <%= res.address%>
+                </td>
+                <td>
+                    <%= res.city%>
+                </td>
+                <td>
+                    <%= res.state%>
+                </td>
+                <td>
+                    <%= res.qualification%>
+                </td>
+                <td>
+                    <%= res.experience%>
+                </td>
+                <td>
+                    <%= res.lastCompanyName%>
+                </td>
+                <td>
+                    <%= res.expectedSalary%>
+                </td>
+                <td>
+                    <%= res.applyFor%>
+                </td>
+                <td>
+                    <img src="/img/<%=res.img%>" width="100">
+                </td>
+            </tr>
+            <% }) %>
+           
+        </table>
+    </body>
+</html>

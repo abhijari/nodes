@@ -1,0 +1,12 @@
+<html>
+    <body style="bgcolor:skyblue">
+        <h1>hello <%= name %></h1>
+        <h2>age : <%= data.age %></h2>
+        <h2>job : <%= data.job %></h2>
+        <h3>Hobbiess:</h3>
+        <% data.hobby.forEach((res)=>{ %>
+            <h4><li><%= res %></li></h4>
+        <% }) %>
+        
+    </body>
+</html>

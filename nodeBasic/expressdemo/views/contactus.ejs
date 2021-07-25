@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <center>
+        <h1>Conatact Us</h1>
+        <br><br><br>
+        <form method="POST" action="/contactus">
+            Who do you want to contact??<br><br>
+            <input type="text" name="who" value="<%= qs.name %>"><br><br><br>
+            Which department ??<br><br>
+            <input type="text"name="dept"  value="<%= qs.dept %>"><br><br><br>
+            your email<br><br>
+            <input type="text" name="mail">
+            <input type="submit" name="submit">
+        </form>
+        </center>
+    </body>
+</html>

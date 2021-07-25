@@ -1,0 +1,17 @@
+<script>
+    var eventdata
+    ws = new WebSocket('ws://localhost:8080')
+    ws.onmessage = (event)=>{
+        console.log(event)
+        alert(event.data)
+    }
+
+
+    ws.onopen = (event)=>{
+        ws.send(Math.floor(Math.random() * 10)+" user connect")
+    }
+
+</script>
+<body>
+<h2 id="id1"></h2>
+</body>

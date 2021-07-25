@@ -1,0 +1,18 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script>
+        //let ws = new websockt('ws://loclahost:8080')
+    const socket = io('http://localhost:8080');
+
+    //ws.open = (event)=>{}
+    socket.on('connect',(msg)=>{
+        socket.on('welcome',(msg)=>{
+            console.log(msg)
+        })
+
+        socket.on('lol',(msg)=>{
+            console.log(msg)
+        })
+        
+        socket.emit('message',{data:'yeey one onther user connect'})
+    })
+</script>
